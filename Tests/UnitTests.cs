@@ -31,7 +31,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Valid()
+        public void Sub_Valid_Witulski()
         {
             Assert.AreEqual(3, Program.Subtract("4", "1"));
             Assert.AreEqual(5, Program.Subtract("10", "5"));
@@ -39,7 +39,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Invalid()
+        public void Sub_Invalid_Witulski()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -47,7 +47,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Null()
+        public void Sub_Null_Witulski()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -55,7 +55,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Valid()
+        public void Mult_Valid_Witulski()
         {
             Assert.AreEqual(3, Program.Multiply("1", "3"));
             Assert.AreEqual(5, Program.Multiply("1", "5"));
@@ -63,7 +63,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Invalid()
+        public void Mult_Invalid_Witulski()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -71,7 +71,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Null()
+        public void Mult_Null_Witulski()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -79,7 +79,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Valid()
+        public void Div_Valid_Witulski()
         {
             Assert.AreEqual(3, Program.Divide("3", "1"));
             Assert.AreEqual(5, Program.Divide("10", "2"));
@@ -87,7 +87,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Invalid()
+        public void Div_Invalid_Witulski()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -95,7 +95,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Null()
+        public void Div_Null_Witulski()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -103,7 +103,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Pow_Valid()
+        public void Pow_Valid_Witulski()
         {
             Assert.AreEqual(3, Program.Power("3", "1"));
             Assert.AreEqual(4, Program.Power("2", "2"));
@@ -111,7 +111,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Pow_Invalid()
+        public void Pow_Invalid_Witulski()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -119,7 +119,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Pow_Null()
+        public void Pow_Null_Witulski()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
